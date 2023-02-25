@@ -46,7 +46,7 @@ class _ProductDetailsState extends State<ProductDetails> {
               vertical: 15.h,
             ),
             decoration: BoxDecoration(
-              color:Color(0xff2879FF),
+              color:Color(0xff2879FF),//pp
               borderRadius: BorderRadius.circular(5.r),
             ),
             child:Center(
