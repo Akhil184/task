@@ -47,7 +47,7 @@ class _ProductDetailsState extends State<ProductDetails> {
             ),
             decoration: BoxDecoration(
               color:Color(0xff2879FF),//pp
-              borderRadius: BorderRadius.circular(5.r),
+              borderRadius: BorderRadius.circular(5.r),//p
             ),
             child:Center(
               child:Text('Edit',
