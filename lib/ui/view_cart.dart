@@ -13,14 +13,14 @@ class ViewCart extends StatefulWidget {
 
 class _ViewCartState extends State<ViewCart> {
 
-  int TotalPrice=0,TotalDiscount=0;
+  int totalPrice=0,totalDiscount=0;
 
   @override
   initState(){
    setState(() {
      for(int i=0;i<Util.price.length;i++) {
-       TotalPrice = int.parse(Util.price[i]) + TotalPrice;
-       TotalDiscount = int.parse(Util.discount[i]) + TotalDiscount;
+       totalPrice = int.parse(Util.price[i]) + totalPrice;
+       totalDiscount = int.parse(Util.discount[i]) + totalDiscount;
      }
    });
     super.initState();
@@ -131,7 +131,7 @@ class _ViewCartState extends State<ViewCart> {
                         crossAxisAlignment:CrossAxisAlignment.start,
                         children: [
                               Text(
-                                'Total Price:${TotalPrice*5/100+TotalPrice}',
+                                'Total Price:${totalPrice*5/100+totalPrice}',
                                 style: TextStyle(
                                   color:Colors.black,
                                   fontFamily:'Gilroy',
@@ -149,7 +149,7 @@ class _ViewCartState extends State<ViewCart> {
                               ),
                           SizedBox(height:20.h,),
                               Text(
-                                'Total discount:${TotalDiscount}',
+                                'Total discount:${totalDiscount}',
                                 style: TextStyle(
                                   color:Colors.black,
                                   fontFamily:'Gilroy',
@@ -158,7 +158,7 @@ class _ViewCartState extends State<ViewCart> {
                               ),
                           SizedBox(height:20.h,),
                               Text(
-                                'Total Estimated  Price:${TotalPrice*5/100+TotalPrice-TotalDiscount}',
+                                'Total Estimated  Price:${totalPrice*5/100+totalPrice-totalDiscount}',
                                 style: TextStyle(
                                   color:Colors.black,
                                   fontFamily:'Gilroy',

@@ -46,8 +46,8 @@ class _ProductDetailsState extends State<ProductDetails> {
               vertical: 15.h,
             ),
             decoration: BoxDecoration(
-              color:Color(0xff2879FF),//pp
-              borderRadius: BorderRadius.circular(5.r),//p
+              color:Color(0xff2879FF),
+              borderRadius: BorderRadius.circular(5.r),
             ),
             child:Center(
               child:Text('Edit',
@@ -87,6 +87,14 @@ class _ProductDetailsState extends State<ProductDetails> {
                 children:[
                   Text(
                     'Name:${widget.name ?? 'empty'}',
+                    style: TextStyle(
+                      color:Colors.black,
+                      fontFamily:'Gilroy',
+                      fontSize: 17.sp,
+                    ),
+                  ),
+                  Text(
+                    '${widget.name ?? 'empty'}',
                     style: TextStyle(
                       color:Colors.black,
                       fontFamily:'Gilroy',
